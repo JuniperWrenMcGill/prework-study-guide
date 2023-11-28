@@ -2,7 +2,7 @@
 
 ## What's the Motivation?
 
-I created this study guide to make learning coding more straightforward. The journey into the world of programming can be intimidating, and I wanted to create a guide that acts as a friendly companion, easing the initial challenges and fostering a positive learning experience.
+I created this study guide to make learning coding more straightforward. The journey into the world of programming can be intimidating, and I wanted to create a guide that acts as a friendly companion through UNCC Coding Bootcamp, easing the initial challenges and fostering a positive learning experience.
 
 ## Why Build This?
 
