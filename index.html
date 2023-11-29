@@ -40,7 +40,7 @@
 
       <section class="card" id="ccs-section">
         <h2>CCS</h2>
-        <ul>      
+        <ul>
           <li> A margin indicates how much space we want around the outside of an element </li>
           <li> A padding indicates how much space we want around the content inside an element </li>
           <li>There are three ways to apply CSS:
@@ -52,35 +52,47 @@
            External CSS Style Sheet:Preferred method for most cases. CSS rules kept in a separate file for easier design changes. Linked to HTML using &lt;link&gt; in the &lt;head&gt; </li>
           <li>Steps to link the external CSS file to the HTML using the &lt;link&Gt; element.
             <br>
-           1. Open your HTML file in the text editor.
+            Inline CSS: Applied directly in HTML using the style attribute.
+            Quick changes, but less flexible
+            <br>      
+            Internal CSS Style Sheet: 
+            Embedded in HTML using the &lt;style&gt; element.
+            Rules apply to specific page elements.
             <br>
-           2. Locate the &lt;head&gt; section of the HTML file.
+            External CSS Style Sheet:Preferred method for most cases.
+            CSS rules kept in a separate file for easier design changes.
+            Linked to HTML using &lt;link&gt; in the &lt;head&gt;                
+          </li>
+          <li> Steps to link the external CSS file to the HTML using the &lt;link&gt; element. 
             <br>
-           3. Insert the following &lt;link&gt; element after the final &lt;meta&gt; element and before the &lt;title&gt; element:
+            1. Open your HTML file in the text editor.
+            <br>         
+            2. Locate the &lt;head&gt; section of the HTML file.
             <br>
-            &lt;link&gt; rel="stylesheet" href="./assets/style.css"&gt;</li>
-          <li> How to use .card class to syle each topic for better visibility.
+            3. Insert the following &lt;link&gt; element after the final &lt;meta&gt; element and before the &lt;title&gt; element:
             <br>
-           1. Open project in VS Code and navigate to style.css.
-            <br>
-           2. Add CSS rule for .card with specified properties.
-            <br>
-           3. Save CSS file.
-            <br>
-           4. Open index.html, ensure eachhas class="card".
-            <br>
-           5. Add notes to the guide using &lt;ul&gt; and &lt;li&gt;.
-            <br>
-           6. Save HTML file </li>
+            &lt;link rel="stylesheet" href="./assets/style.css"&gt </li>
+            <li> How to use .card class to syle each topic for better visibility.
+              <br>
+               1. Open project in VS Code and navigate to style.css.
+               <br>
+               2. Add CSS rule for .card with specified properties.
+               <br>
+               3. Save CSS file.
+               <br>
+               4. Open index.html, ensure each <section> has class="card".
+               <br>
+               5. Add notes to the guide using &lt;ul&gt; and &lt;li&gt;.
+               <br>
+               6. Save HTML file.</li>
         </ul>
       </section>
 
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-         <li> git status: checks what branch we are currently on. </li>
-         <li> git checkout -b branch-name: creates a new branch and switches to it. </li>
-         <li> Article on Markdown Syntax: <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Basic Writing and Formatting Syntax</a></li>
+         <li> "git status": checks what branch we are currently on. </li>
+         <li> "code ." : opens VS Code </li>
          <li> How to Create a New Repository:
            <br>
            1. Log in to GitHub.
@@ -143,13 +155,13 @@
       <section class="card" id="javascript-section">
         <h2>Javascript</h2>
         <ul>
-         <li> Article on JavaScript Basics: <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_Started_with_the_web/JavaScript_basics">Getting Started with JavaScript</a> </li>
-         <li> Article on JavaScript Data Types and Data Structures: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">JavaScript data types and data structures</a></li>
+         <li> Article on JavaScript Basics: <a href= " https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics " >Getting Started with JavaScript Basics</a> </li>
+         <li> Article on JavaScript Data Types and Data Structures: <a href= https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures > JavaScript data types and data structures</a> </li>
          <li> A variable is a named container that allows us to store data in our code. </li>
          <li> Control flow is the order in which a computer executes code in a script.</li>
          <li> Data Types: The classification of values in JavaScript, such as strings, numbers, booleans, etc.</li>
-         <li> String: A sequence of characters, typically used for text. </li>
-         <li> Number: Numeric data type, including integers and floating-point numbers.</li>
+         <li> String: A sequence of characters, typically used for text.</li>
+         <li> Number:Numeric data type, including integers and floating-point numbers.</li>
          <li> Boolean:A data type representing true or false values.</li>
          <li> Array: An ordered list of values, accessed by index.</li>
          <li> Object:A collection of key-value pairs, representing a real-world entity.</li>
@@ -162,50 +174,51 @@
          <li> Closure: A function that "closes over" variables from its outer scope, retaining access to them.</li>
          <li> Asynchronous: Code execution that doesn't block the program, often used for tasks like fetching data or handling events.</li>
          <li> API (Application Programming Interface): A set of rules and tools for building software applications.</li>
-         <li> JSON (JavaScript Object Notation): A lightweight data interchange format, often used for data exchange between a server and a web application.</li>
-         <li> AJAX (Asynchronous JavaScript and XML): A technique for updating parts of a web page without reloading the entire page.</li>
+         <li> JSON (JavaScript Object Notation):A lightweight data interchange format, often used for data exchange between a server and a web application.</li>
+         <li> AJAX (Asynchronous JavaScript and XML):A technique for updating parts of a web page without reloading the entire page.</li>
          <li> ES6/ES2015:The sixth edition of the ECMAScript standard, introducing new features to JavaScript.</li>
          <li> Debugging: The process of finding and fixing errors in code</li>
          <li> Some Integrating Basics:
-           <br>
-           1. Integrating JavaScript into a Project:
-           <br>
-           • Navigate to the project directory in the command line.
-           <br>
-           • Ensure you are on the main branch using git checkout main and synchronize with the latest changes using git pull origin main.
-           <br>
-           • Create a new feature branch with git checkout -b feature/add-js.
-           <br>
-           • Go to the relevant folder (e.g., assets) and create a new file, for instance, script.js.
-           <br>
-           • Open the newly created file in your preferred code editor.
-           <br>
-           2. Creating a JavaScript Variable:
-           <br>
-           • Declare a variable in the JavaScript file with a meaningful name and assign a value (e.g., var myVariable = "example").
-           <br>
-           • Utilize console.log(myVariable) to display the variable's value in the console.
-           <br>
-           • Save the file.
-           <br>
-           3. Connecting JavaScript File to HTML:
-           <br>
-           • Open the HTML file and include &lt;script src="./path/to/your/script.js"&gt;&lt;/script&gt; under the &lt;footer&gt; and above the closing &lt;/body&gt; tag
-           <br>
-           • Save the HTML file.
-           <br>
-           4. Using Browser Developer Tools:
-           <br>
-           • Open the HTML file in a browser using a development server.
-           <br>
-           • Access the browser's Developer Tools by right-clicking and selecting "Inspect" or using keyboard shortcuts.
-           <br>
-           • Navigate to the Console tab to inspect the output of console.log.</li>
-         <li> Overview of Control Flow:
-           <br>
-           1. Control flow determines the order in which a computer executes code.
-           <br>
-           2. JavaScript code runs sequentially, from the first statement at the top to the last at the bottom.</li>
+          <br>
+          1. Integrating JavaScript into a Project:
+          <br>
+          •  Navigate to the project directory in the command line. 
+          <br>        
+          •  Ensure you are on the main branch using git checkout main and synchronize with the latest changes using git pull origin main.
+          <br>
+          •  Create a new feature branch with git checkout -b feature/add-js.
+          <br>
+          • Go to the relevant folder (e.g., assets) and create a new file, for instance, script.js.
+          <br>
+          •  Open the newly created file in your preferred code editor.
+          <br>
+          2. Creating a JavaScript Variable:
+          <br>
+          •  Declare a variable in the JavaScript file with a meaningful name and assign a value (e.g., var myVariable = "example").    
+          <br>      
+          •  Utilize console.log(myVariable) to display the variable's value in the console.
+          <br>
+          •  Save the file.
+          <br>
+          3. Connecting JavaScript File to HTML:
+          <br>
+          •  Open the HTML file and include &lt;script src="./path/to/your/script.js"&gt;&lt;/script&gt; under the &lt;footer&gt; and above the closing &lt;/body&gt; tag
+          <br>
+          •  Save the HTML file.
+          <br>
+          4. Using Browser Developer Tools:
+          <br>
+          •  Open the HTML file in a browser using a development server.  
+          <br>        
+          •  Access the browser's Developer Tools by right-clicking and selecting "Inspect" or using keyboard shortcuts.
+          <br>
+          •  Navigate to the Console tab to inspect the output of console.log.</li>
+          <li> Overview of Control Flow:
+            <br>
+            1. Control flow determines the order in which a computer executes code.
+            <br>
+            2. JavaScript code runs sequentially, from the first statement at the top to the last at the bottom.</li>
+
         </ul>
       </section>
     </main>
