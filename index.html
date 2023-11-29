@@ -15,34 +15,196 @@
       <section class="card"id="html-section">
         <h2>HTML</h2>
         <ul>
-          <li>The head element contains information about the webpage.</li>
-          <li>The body element represents the visible content shown to the user</l1>
-          <li>You can add as many notes within these labeled brackets.</l1>
-          <li> Pay close attention to tags there is no html tag called <1i> <li>
+          <li> Hypertext Markup Language (HTML) is a fundamental language for constructing webpages.</li>
+          <li> The head element contains information about the webpage. </li>
+          <li> The body element represents the visible content shown to the user. </l1>
+          <li> You can add as many notes within these labeled brackets. </l1>
+          <li> Pay close attention to tags there is no html tag called. &lt;1i&gt; </li>
+          <li> &lt;body&gt; formatting commands
+           <br>
+           Headings "&lt;h1&gt;, &lt;h2&gt;,...&lt;h6&gt;" Theese define the level of headings on a page with "&lt;h1&gt;" being the most significant.
+           <br>
+           Paragraph "&lt;h1&gt;": Represents blocks of text, it is commonly used for textual content.
+           <br> 
+           List &lt;ul&gt;, &lt;ol&gt;, &ltli&gt;: These represent unordered and ordered list, providing a way to organize information.
+           <br>
+           Images &lt;img&gt;: this command contains information about displayed images. The src attribute defines the image source. 
+           <br> 
+           Line Break &lt;br&gt;: this command creates a line brea, useful for spacing between content blocks. 
+           <br>
+           Hyperlings &lt;a&gt;: self explanatory.</li>
         </ul>
       </section>
 
       <section class="card"id="ccs-section">
         <h2>CCS</h2>
-        <ul>
-          <li> I can enter my CSS notes here</li>
-        </u1>
+        <ul>      
+          <li> A margin indicates how much space we want around the outside of an element </li>
+          <li> A padding indicates how much space we want around the content inside an element </li>
+          <li>There are three ways to apply CSS:
+           <br>
+           Inline CSS: Applied directly in HTML using the style attribute. Quick changes, but less flexible
+           <br>
+           Internal CSS Style Sheet: Embedded in HTML using the &lt;style&gt; element. Rules apply to specific page elements.
+           <br>
+           External CSS Style Sheet:Preferred method for most cases. CSS rules kept in a separate file for easier design changes. Linked to HTML using &lt;link&gt; in the &lt;head&gt; </li>
+         <li>Steps to link the external CSS file to the HTML using the &lt;link&Gt; element.
+            <br>
+           1. Open your HTML file in the text editor.
+            <br>
+           2. Locate the &lt;head&gt; section of the HTML file.
+            <br>
+           3. Insert the following &lt;link&gt; element after the final &lt;meta&gt; element and before the &lt;title&gt; element:
+            <br>
+            &lt;link&gt; rel="stylesheet" href="./assets/style.css"&gt;</li>
+          <li> How to use .card class to syle each topic for better visibility.
+            <br>
+           1. Open project in VS Code and navigate to style.css.
+            <br>
+           2. Add CSS rule for .card with specified properties.
+            <br>
+           3. Save CSS file.
+            <br>
+           4. Open index.html, ensure eachhas class="card".
+            <br>
+           5. Add notes to the guide using &lt;ul&gt; and &lt;li&gt;.
+            <br>
+           6. Save HTML file </li>
+        </ul>
       </section>
 
       <section class="card"id="git-section">
         <h2>Git</h2>
-        <u1>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-        </u1>
+        <ul>
+         <li> git status: checks what branch we are currently on. </li>
+         <li> git checkout -b branch-name: creates a new branch and switches to it. </li>
+         <li> Article on Markdown Syntax: <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Basic Writing and Formatting Syntax</a></li>
+         <li> How to Create a New Repository:
+           <br>
+           1. Log in to GitHub.
+           <br>
+           2. Click the plus sign near your profile picture.
+           <br>
+           3. Choose "New Repository" from the dropdown.
+           <br>
+           4. Name your repository (e.g., "prework-study-guide").
+           <br>
+           5. Add a description and make it Public.
+           <br>
+           6. Select "Add README" and choose a license.
+           <br>
+           7. Review and ensure options are selected.
+           <br>
+           8. Click "Create Repository" and explore your new repository.</li>
+          <li> GitHub Issues: Purpose: Manage and track tasks for the project.</li>
+          <li>How to Create New Issues:
+            <br>
+            1. Navigate to the repository on GitHub.
+            <br>
+            2. Click on the "Issues" tab.
+            <br>
+            3. Click the "New Issue" button.
+            <br>
+            4. Add a title.
+            <br>
+            5. Use Markdown to create a detailed description.
+            <br>
+            6. Submit the issue.</li>
+          <li>GitHub Flow:
+            <br>
+            1. Create a Feature Branch: Start with a feature branch, not directly in the main branch.
+            <br>
+            2. Make Changes and Commit: Make changes in the feature branch and commit them. Use descriptive commit messages.
+            <br>
+            3. Push Changes to GitHub: Push changes from your local feature branch to GitHub.
+            <br>
+            4. Open a Pull Request (PR): Open a PR to merge the feature branch into the main branch. PR compares your changes (feature branch) with the main branch.
+            <br>
+            5. Code Review and Approval: Others review your changes, comment, and suggest. Resolve conflicts if any.
+            <br>
+            6. Merge into Main: Once approved, merge your changes into the main branch. Main branch is now updated with your changes. </li>
+         <li>Syncing Local and Remote Branch:
+            <br>
+            1. Use the command line to go to the project directory.
+            <br>
+            2. Create Feature Branch: "git checkout -b feature/starter-code", "git add -A", "git commit -m "add starter code", "git pull origin main", "git push origin feature/starter-code",
+            <br>
+            3. In the browser, go to the GitHub repository. Select the "Compare & pull request" button.
+            <br>
+            4. Merge PR: Add a title, leave the body empty. Set base branch to "main", comparison branch to "feature/starter-code."" Click "Create Pull Request" and then "Merge Pull Request."
+            <br>
+            5. Verify Changes: Check the main branch on GitHub to see your changes.</li>
+        </ul>
 
       </section>
 
       <section class="card"id="javascript-section">
         <h2>Javascript</h2>
-        <u1>
-          <li> I can enter my javascript notes here. I am exited for this portion the most</li>
-        </u1>
+        <ul>
+         <li> Article on JavaScript Basics: <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_Started_with_the_web/JavaScript_basics">Getting Started with JavaScript</a> </li>
+         <li> Article on JavaScript Data Types and Data Structures: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">JavaScript data types and data structures</a></li>
+         <li> A variable is a named container that allows us to store data in our code. </li>
+         <li> Control flow is the order in which a computer executes code in a script.</li>
+         <li> Data Types: The classification of values in JavaScript, such as strings, numbers, booleans, etc.</li>
+         <li> String: A sequence of characters, typically used for text. </li>
+         <li> Number: Numeric data type, including integers and floating-point numbers.</li>
+         <li> Boolean:A data type representing true or false values.</li>
+         <li> Array: An ordered list of values, accessed by index.</li>
+         <li> Object:A collection of key-value pairs, representing a real-world entity.</li>
+         <li> Function: A reusable block of code, designed to perform a specific task.</li>
+         <li> Conditional Statement: A statement that executes different code based on specified conditions.</li>
+         <li> Loop: A programming construct that repeats a set of instructions until a specific condition is met.</li>
+         <li> Event: An action or occurrence recognized by a program, often triggering a response.</li>
+         <li> DOM (Document Object Model): A programming interface for web documents, allowing manipulation of HTML and XML documents.</li>
+         <li> Callback: A function passed as an argument to another function, to be executed later.</li>
+         <li> Closure: A function that "closes over" variables from its outer scope, retaining access to them.</li>
+         <li> Asynchronous: Code execution that doesn't block the program, often used for tasks like fetching data or handling events.</li>
+         <li> API (Application Programming Interface): A set of rules and tools for building software applications.</li>
+         <li> JSON (JavaScript Object Notation): A lightweight data interchange format, often used for data exchange between a server and a web application.</li>
+         <li> AJAX (Asynchronous JavaScript and XML): A technique for updating parts of a web page without reloading the entire page.</li>
+         <li> ES6/ES2015:The sixth edition of the ECMAScript standard, introducing new features to JavaScript.</li>
+         <li> Debugging: The process of finding and fixing errors in code</li>
+         <li> Some Integrating Basics:
+           <br>
+           1. Integrating JavaScript into a Project:
+           <br>
+           • Navigate to the project directory in the command line.
+           <br>
+           • Ensure you are on the main branch using git checkout main and synchronize with the latest changes using git pull origin main.
+           <br>
+           • Create a new feature branch with git checkout -b feature/add-js.
+           <br>
+           • Go to the relevant folder (e.g., assets) and create a new file, for instance, script.js.
+           <br>
+           • Open the newly created file in your preferred code editor.
+           <br>
+           2. Creating a JavaScript Variable:
+           <br>
+           • Declare a variable in the JavaScript file with a meaningful name and assign a value (e.g., var myVariable = "example").
+           <br>
+           • Utilize console.log(myVariable) to display the variable's value in the console.
+           <br>
+           • Save the file.
+           <br>
+           3. Connecting JavaScript File to HTML:
+           <br>
+           • Open the HTML file and include &lt;script src="./path/to/your/script.js"&gt;&lt;/script&gt; under the &lt;footer&gt; and above the closing &lt;/body&gt; tag
+           <br>
+           • Save the HTML file.
+           <br>
+           4. Using Browser Developer Tools:
+           <br>
+           • Open the HTML file in a browser using a development server.
+           <br>
+           • Access the browser's Developer Tools by right-clicking and selecting "Inspect" or using keyboard shortcuts.
+           <br>
+           • Navigate to the Console tab to inspect the output of console.log.</li>
+         <li> Overview of Control Flow:
+           <br>
+           1. Control flow determines the order in which a computer executes code.
+           <br>
+           2. JavaScript code runs sequentially, from the first statement at the top to the last at the bottom.</li>
+        </ul>
       </section>
     </main>
 
