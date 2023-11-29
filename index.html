@@ -21,25 +21,20 @@
           <li> The head element contains information about the webpage. </li>
           <li> The body element represents the visible content shown to the user. </l1>
           <li> You can add as many notes within these labeled brackets. </l1>
-          <li> Pay close attention to tags. There is no html tag called &lt;1i&gt;. <li>
-          <lt> </lt>&lt;body&gt;:      
-          <br>
-            Headings "&lt;h1&gt;, &lt;h2&gt; ... &lt;h6&gt;"":
-            These define the level of headings on a page, with "&lt;h1&gt;" being the most significant.
-            <br>
-            Paragraph "&lt;p&gt;":
-            Representing blocks of text, "&lt;p&gt;" is commonly used for textual content.
-            <br>
-            Lists &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;:
-            These represent unordered and ordered lists, providing a way to organize information.
-            <br>
-            Images &lt;img&gt;:
-            &lt;img&gt; contains information about displayed images. The src attribute defines the image source.
-            <br>
-            Line Break &lt;br&gt;:
-            &lt;br&gt; creates a line break, useful for spacing between content blocks.
-            <br>
-            Hyperlinks &lt;a&gt;:      
+          <li> Pay close attention to tags there is no html tag called. &lt;1i&gt; </li>
+          <li> &lt;body&gt; formatting commands
+           <br>
+           Headings "&lt;h1&gt;, &lt;h2&gt;,...&lt;h6&gt;" Theese define the level of headings on a page with "&lt;h1&gt;" being the most significant.
+           <br>
+           Paragraph "&lt;h1&gt;": Represents blocks of text, it is commonly used for textual content.
+           <br> 
+           List &lt;ul&gt;, &lt;ol&gt;, &ltli&gt;: These represent unordered and ordered list, providing a way to organize information.
+           <br>
+           Images &lt;img&gt;: this command contains information about displayed images. The src attribute defines the image source. 
+           <br> 
+           Line Break &lt;br&gt;: this command creates a line brea, useful for spacing between content blocks. 
+           <br>
+           Hyperlinks &lt;a&gt;: ex: &lta href="website.name"&gt;what you want displayed as link&lt;/a &gt; </li>
         </ul>
       </section>
 
@@ -47,8 +42,15 @@
         <h2>CCS</h2>
         <ul>
           <li> A margin indicates how much space we want around the outside of an element </li>
-          <li> A padding indictes how much space we want around the content inside an element </li>
-          <li> There are three ways to apply CSS:
+          <li> A padding indicates how much space we want around the content inside an element </li>
+          <li>There are three ways to apply CSS:
+           <br>
+           Inline CSS: Applied directly in HTML using the style attribute. Quick changes, but less flexible
+           <br>
+           Internal CSS Style Sheet: Embedded in HTML using the &lt;style&gt; element. Rules apply to specific page elements.
+           <br>
+           External CSS Style Sheet:Preferred method for most cases. CSS rules kept in a separate file for easier design changes. Linked to HTML using &lt;link&gt; in the &lt;head&gt; </li>
+          <li>Steps to link the external CSS file to the HTML using the &lt;link&Gt; element.
             <br>
             Inline CSS: Applied directly in HTML using the style attribute.
             Quick changes, but less flexible
@@ -92,24 +94,24 @@
          <li> "git status": checks what branch we are currently on. </li>
          <li> "code ." : opens VS Code </li>
          <li> How to Create a New Repository:
-          <br>    
-          1. Log in to GitHub. 
-          <br>
-          2. Click the plus sign near your profile picture.
-          <br>
-          3. Choose "New Repository" from the dropdown.
-          <br>
-          4. Name your repository (e.g., "prework-study-guide").
-          <br>
-          5. Add a description and make it Public.
-          <br>      
-          6. Select "Add README" and choose a license.
-          <br>
-          7. Review and ensure options are selected.
-          <br>
-          8. Click "Create Repository" and explore your new repository.</li>          
-          <li> GitHub Issues: Purpose: Manage and track tasks for the project.</li>
-          <li> How to Create New Issues:
+           <br>
+           1. Log in to GitHub.
+           <br>
+           2. Click the plus sign near your profile picture.
+           <br>
+           3. Choose "New Repository" from the dropdown.
+           <br>
+           4. Name your repository (e.g., "prework-study-guide").
+           <br>
+           5. Add a description and make it Public.
+           <br>
+           6. Select "Add README" and choose a license.
+           <br>
+           7. Review and ensure options are selected.
+           <br>
+           8. Click "Create Repository" and explore your new repository.</li>
+         <li> GitHub Issues: Purpose: Manage and track tasks for the project.</li>
+         <li>How to Create New Issues:
             <br>
             1. Navigate to the repository on GitHub.
             <br>
@@ -122,46 +124,30 @@
             5. Use Markdown to create a detailed description.
             <br>
             6. Submit the issue.</li>
-            <li> Article on Markdown Syntax:<a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax" > Basic writing and formatting syntax </a> </li>
-            <li> GitHub Flow: 
-              <br>
-              1. Create a Feature Branch: Start with a feature branch, not directly in the main branch.
-              <br>
-              2. Make Changes and Commit: Make changes in the feature branch and commit them.          
-              Use descriptive commit messages.
-              <br>
-              3. Push Changes to GitHub: Push changes from your local feature branch to GitHub.
-              <br>
-              4. Open a Pull Request (PR): Open a PR to merge the feature branch into the main branch.
-              PR compares your changes (feature branch) with the main branch.
-              <br>
-              5. Code Review and Approval: Others review your changes, comment, and suggest.
-              Resolve conflicts if any.
-              <br>
-              6. Merge into Main:
-              Once approved, merge your changes into the main branch.
-              Main branch is now updated with your changes.</li>
-              <li> Syncing Local and Remote Branch: 
-                <br>
-                1. Use the command line to go to the project directory.
-                <br>
-                2. Create Feature Branch:                
-                   "git checkout -b feature/starter-code",                
-                   "git add -A",
-                   "git commit -m "add starter code",                
-                   "git pull origin main",
-                   "git push origin feature/starter-code",     
-                   <br>     
-                3. In the browser, go to the GitHub repository.
-                Select the "Compare & pull request" button.
-                <br>
-                4. Merge PR:
-                Add a title, leave the body empty.
-                Set base branch to "main", comparison branch to "feature/starter-code.""
-                Click "Create Pull Request" and then "Merge Pull Request."
-                <br>
-                5. Verify Changes:
-                Check the main branch on GitHub to see your changes.</li>
+         <li>GitHub Flow:
+            <br>
+            1. Create a Feature Branch: Start with a feature branch, not directly in the main branch.
+            <br>
+            2. Make Changes and Commit: Make changes in the feature branch and commit them. Use descriptive commit messages.
+            <br>
+            3. Push Changes to GitHub: Push changes from your local feature branch to GitHub.
+            <br>
+            4. Open a Pull Request (PR): Open a PR to merge the feature branch into the main branch. PR compares your changes (feature branch) with the main branch.
+            <br>
+            5. Code Review and Approval: Others review your changes, comment, and suggest. Resolve conflicts if any.
+            <br>
+            6. Merge into Main: Once approved, merge your changes into the main branch. Main branch is now updated with your changes. </li>
+         <li>Syncing Local and Remote Branch:
+            <br>
+            1. Use the command line to go to the project directory.
+            <br>
+            2. Create Feature Branch: "git checkout -b feature/starter-code", "git add -A", "git commit -m "add starter code", "git pull origin main", "git push origin feature/starter-code",
+            <br>
+            3. In the browser, go to the GitHub repository. Select the "Compare & pull request" button.
+            <br>
+            4. Merge PR: Add a title, leave the body empty. Set base branch to "main", comparison branch to "feature/starter-code."" Click "Create Pull Request" and then "Merge Pull Request."
+            <br>
+            5. Verify Changes: Check the main branch on GitHub to see your changes.</li>
         </ul>
 
       </section>
